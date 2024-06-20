@@ -1,2 +1,2 @@
-#!/binn/bash
-printf "%.2f\n" $NUM
+#!/bin/bash
+echo ".$((NUM % 100))"

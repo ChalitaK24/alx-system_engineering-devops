@@ -11,9 +11,7 @@ do
 	elif (( num % 5 == 0 ));
 	then
 		echo "Buzz"
-	elif
+	else
 		echo "$num"
 	fi
 done
-
-

@@ -5,5 +5,8 @@ do
 	min=1
 	while [ $min -le 59 ]
 	do
-		echo
+		echo "$hr:$min"
+		((min++))
+	done
+	(hr++))
 done

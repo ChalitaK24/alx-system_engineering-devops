@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Inifinite loop with signal handling
+

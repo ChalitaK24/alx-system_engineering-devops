@@ -2,7 +2,7 @@
 # Script displays content in a list format 
 for i in *;
 do
-	if [[ -e "$i" && "$i" == *-* ]]
+	if [[ -f "$i" || -d "$i" ]]
 	then
 		echo "${i#*-}"
 	fi

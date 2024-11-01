@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # Script that checks for the existence of the school file and provides details
-if [ -e school ];
+if [ -e "school" ];
 then
 	echo "school file exists"
 	
-	if [ -f school ];
+	if [ -f "school" ];
 	then
 		echo "school is a regular file"
 
-		if [ ! -s school ];
+		if [ ! -s "school" ];
 		then
 			echo "school file is empty"
 		else

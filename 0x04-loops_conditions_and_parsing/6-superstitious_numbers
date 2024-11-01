@@ -2,7 +2,7 @@
 # This script is displaying from 1 to 20 and other itertion
 i=1
 while [ $i -le 20 ]
-do 
+do
 	case $i in
 
 		4)

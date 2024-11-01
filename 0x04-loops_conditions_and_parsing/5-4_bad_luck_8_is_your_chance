@@ -5,7 +5,7 @@ while [ $i -le 10 ]
 do
 	if [ $i -lt 4 ]
 	then
-		echo "Best school"
+		echo "Best School"
 	elif [ $i -eq 4 ]
 	then
 		echo "bad luck"

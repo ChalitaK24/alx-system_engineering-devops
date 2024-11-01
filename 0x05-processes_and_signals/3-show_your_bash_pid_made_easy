@@ -2,7 +2,7 @@
 # Displays PID along with process name of process whose name contain the word bash
 for pid in /proc/[0-9]*;
 do
-if [[ - f "$pid/comm" }};
+	if [[ - f "$pid/comm" && $(cat "$pid/comm") == *bash* ]];
 then
-echo "PID: $(basename "$pid") - Process Name: )"
-
+echo "PID: $(basename "$pid") - Process Name: $(cat "$pid/comm")"fi
+done

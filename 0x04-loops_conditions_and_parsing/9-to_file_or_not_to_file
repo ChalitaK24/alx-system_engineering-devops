@@ -6,18 +6,22 @@ then
 	
 	if [ -f "school" ];
 	then
-		echo "school is a regular file"
-
+	
 		if [ ! -s "school" ];
 		then
 			echo "school file is empty"
 		else
 			echo "school file is not empty"
-	fi
+		fi
+		echo "school file exists"
+		echo "school is a regular file"
 
 	elif [ -d "school" ];
 	then
+		echo "school file exists"
 		echo "school is a directory"
+	else
+		echo "school file exists"
 	fi
 
 else

@@ -4,26 +4,17 @@ if [ -e "school" ];
 then
 	echo "school file exists"
 	
-	if [ -f "school" ];
+	if [ ! -s "school" ];
 	then
-	
-		if [ ! -s "school" ];
-		then
-			echo "school file is empty"
-		else
-			echo "school file is not empty"
-		fi
-		echo "school file exists"
-		echo "school is a regular file"
-
-	elif [ -d "school" ];
-	then
-		echo "school file exists"
-		echo "school is a directory"
+		echo "school file is empty"
 	else
-		echo "school file exists"
+		echo "school file is not empty"
 	fi
 
+	if [ -f "school" ];
+	then
+		echo "school is a regular file"
+	fi
 else
 	echo "school file does not exist"
 fi

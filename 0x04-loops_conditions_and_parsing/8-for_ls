@@ -1,7 +1,8 @@
-!#/usr/bin/env bash
+#!/usr/bin/env bash
 # Script displays content in a list format 
 for i in *; do
-	if [[ -e "$i" && "$i" == *-*]]; then
-		echo
+	if [[ -e "$i" && "$i" == *-* ]]
+	then
+		echo "${i#*-}"
 	fi
 done

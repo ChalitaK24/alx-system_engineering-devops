@@ -6,5 +6,5 @@ then
 	kill "$i"
 	echo "Killed"
 else
-	echo "Proccess 7-highlander not found"
+	echo "Process 7-highlander not found"
 fi

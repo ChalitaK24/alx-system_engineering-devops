@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Use Kill command to stop a process
-i=$(pgrep -f "4-to_infinity_and_beyond")
+pid=$(pgrep -f "4-to_infinity_and_beyond")
 
-if [ -n "$i" ];
+if [ -n "$pid" ];
 then
-	kill "$i"
+	kill "$pid"
 	echo "Terminated"
 else
 	echo "Process 4-to_infinity_and_beyond not found."

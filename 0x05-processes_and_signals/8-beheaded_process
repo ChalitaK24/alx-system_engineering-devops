@@ -4,6 +4,7 @@ i=$(pgrep -f 7-highlander)
 if [ -n "$i" ];
 then
 	kill "$i"
+	echo "Killed"
 else
 	echo "Proccess 7-highlander not found"
 fi

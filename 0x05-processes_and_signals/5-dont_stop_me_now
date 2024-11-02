@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Use Kill command to stop a process
-i=$(pgrep -f 4-to_infinity_and_beyond)
+i=$(pgrep -f "4-to_infinity_and_beyond")
 
 if [ -n "$i" ];
 then
